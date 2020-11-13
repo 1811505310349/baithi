@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/idtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15sp"
+        android:fontFamily="sans-serif-light"
+        android:text="ĐỒNG HỒ"
+        android:textSize="20sp"
+        android:background="#03DAC5"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        android:fontFamily="sans-serif-light"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_baseline_more_vert_24"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25pt"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_shoppingcart"/>
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:background="@drawable/botron01"
+        android:text="All"
+        android:textColor="@android:color/holo_green_light"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:paddingRight="50dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="-50dp"/>
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:background="@drawable/botron02"
+        android:text="LazMail"
+        android:textColor="@android:color/holo_green_light"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="20dp"/>
+    <GridView
+        android:id="@+id/gridview"
+        android:numColumns="2"
+        android:verticalSpacing="1dp"
+        android:horizontalSpacing="1dp"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idtitle"/>
+
+
+</RelativeLayout>
